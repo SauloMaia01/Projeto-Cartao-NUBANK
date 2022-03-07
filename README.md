@@ -4,4 +4,6 @@ Aprenda como replicar e animar um cartão com HTML, CSS e JavaScript
 
 link da página no youtube: https://www.youtube.com/playlist?list=PLSHNk_yA5fNg2REUfvCir5CU-DRJLa0CI
 
+Link com o resultado final do projeto: https://saulomaia01.github.io/Projeto-Cartao-NUBANK/
+
 
