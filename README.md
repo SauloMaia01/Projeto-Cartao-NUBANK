@@ -1,2 +1,2 @@
-# Projeto-criação-do-Cartao-NUBANK
+# Projeto-Cartao-NUBANK
  Cartão NUBANK com HTML, CSS e JavaScript
