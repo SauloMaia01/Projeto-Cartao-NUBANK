@@ -13,16 +13,18 @@ function cardEffect(event){
     const centerY = card.offsetTop + cardHeight/2
 
     const positionX = event.clientX - centerX
-    const positionY = event.clienty - centerY
+    const positionY = event.clientY - centerY
 
     const rotateX = ((+1)*25*positionY/(cardHeight/2)).toFixed(2)
     const rotateY = ((+1)*25*positionX/(cardWidth/2)).toFixed(2)
     
-    card.getElementsByClassName.transform = 'perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)'
+    card.style.transform = `perspective(500px) rotateX(${rotateX}deg) rotateY(${rotateY}deg)`
 }
 
 function cardBack(event){
-    card.getElementsByClassName.transform = 'perspective(500px) rotateX(0deg) rotateY(0deg)'
+
+    card.style.transform = `perspective(500px) rotateX(0deg) rotateY(0deg)`
+
     cardTransition()
 }
 
@@ -31,7 +33,8 @@ function cardTransition(){
     clearInterval(card.transitionId)
 
     card.style.transition = 'transform 400ms'
-    setTimeout(() => {
+
+    card.transitionId = setTimeout(() => {
         card.style.transition = ''
     },400)
 }
